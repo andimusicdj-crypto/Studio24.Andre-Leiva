@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estudio 24 | Beauty Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    background: #a5d6a7;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* SERVICIOS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #81c784;
+}
+
+/* FRASE */
+.frase {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    color: #666;
+}
+
+/* GALERIA */
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACTO */
+.contacto {
+    text-align: center;
+}
+
+.contacto a {
+    color: #81c784;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>ESTUDIO 24</h1>
+        <p>Donde tu imagen se transforma en tu mejor versión</p>
+        <a class="btn" href="https://wa.me/543517705407?text=Hola!%20Quiero%20reservar%20un%20turno%20en%20Estudio%2024">
+            Reservar turno
+        </a>
+    </div>
+</div>
+
+<!-- FRASE -->
+<section>
+    <p class="frase">
+        Belleza, cuidado y energía en un solo lugar ✨
+    </p>
+</section>
+
+<!-- PELUQUERIA -->
+<section>
+    <h2>Peluquería</h2>
+    <div class="grid">
+        <div class="card"><h3>Cortes & Estilo</h3><p>Diseños personalizados.</p></div>
+        <div class="card"><h3>Coloración</h3><p>Balayage, reflejos y más.</p></div>
+        <div class="card"><h3>Tratamientos</h3><p>Nutrición y reparación capilar.</p></div>
+        <div class="card"><h3>Alisados</h3><p>Orgánicos y anti-frizz.</p></div>
+    </div>
+</section>
+
+<!-- ESTETICA -->
+<section>
+    <h2>Estética & Bienestar</h2>
+    <div class="grid">
+        <div class="card"><h3>Faciales</h3><p>Tratamientos personalizados.</p></div>
+        <div class="card"><h3>Pestañas & Cejas</h3><p>Lifting y perfilado.</p></div>
+        <div class="card"><h3>Uñas</h3><p>Manos y pies.</p></div>
+        <div class="card"><h3>Terapias</h3><p>Reiki y bienestar.</p></div>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria">
+    <h2>Galería</h2>
+    <div class="grid">
+        <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f">
+        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e">
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Jacinto de Altolaguirre 1773, Yofre Norte</p>
+    <p>📱 WhatsApp: 3517705407</p>
+    <p>📷 Instagram: <a href="https://instagram.com/somos.studio24" target="_blank">@somos.studio24</a></p>
+    <p>🕒 10:00 a 13:30 | 16:00 a 20:00</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>©️ Estudio 24 - Beauty Studio</p>
+</footer>
+
+<!-- BOTON WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/543517705407?text=Hola!%20Quiero%20info%20de%20Estudio%2024">💬</a>
+
+<!-- ANIMACIONES -->
+<script>
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < window.innerHeight - 50) {
+            card.classList.add('visible');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
